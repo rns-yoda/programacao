@@ -31,15 +31,17 @@ int main() {
     int nivelAtividade;
     string descricaoAtividade;
 
-    // Solicitar peso
-    cout << "Peso (em quilogramas): ";
-    cin >> peso;
+    do{
+        // Solicitar peso
+    	cout << "Peso (em quilogramas): ";
+    	cin >> peso;
 
-    // Validar peso
-    if (peso <= 0) {
-        cout << "O peso deve ser maior que zero. Reinicie o programa e tente novamente." << endl;
-        return 1;
-    }
+   		// Validar peso
+    	if (peso <= 0) {
+        	cout << "\nO peso deve ser maior que zero. Tente novamente.\n" << endl;
+    	}
+    
+	} while(peso <= 0);
 
     // Exibir opções de nível de atividade física
     cout << "\n Selecione o seu nivel de atividade fisica: \n" << endl;
@@ -75,7 +77,6 @@ int main() {
             break;
         default:
             cout << "Opção invalida. Reinicie o programa e tente novamente." << endl;
-            return 1;
     }
 
     // Calcular a quantidade básica de água recomendada (QBAR)
