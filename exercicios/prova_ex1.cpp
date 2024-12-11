@@ -29,7 +29,7 @@ bool isSexoInvalido(char sexo){
 int main() {
 	
     int idade;
-    double peso, altura, tmb;
+    float peso, altura, tmb;
     char sexo;
 
     // Solicitar informações do usuário
