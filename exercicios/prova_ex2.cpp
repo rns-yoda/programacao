@@ -83,8 +83,7 @@ int main() {
     // Calcular a quantidade diária recomendada de água (QDAR)
     qdar = qbar * naf;
 
-    // Exibir o resultado
-    cout << fixed << setprecision(2);
+    // Exibir o resultado 
     cout << "\n Com base no seu peso de " << peso << " kg e nivel de atividade fisica (" << descricaoAtividade << "), a quantidade diaria recomendada de agua e de " << qdar << " litros." << endl;
 
     return 0;
